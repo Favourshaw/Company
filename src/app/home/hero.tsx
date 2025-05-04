@@ -7,7 +7,7 @@ import { FaStar } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <section className="relative w-full overflow-hidden px-6 my-30 max-w-7xl mx-auto flex flex-col items-center bg-white  ">
+    <section className="relative w-full overflow-hidden px-6 mt-30 max-w-7xl mx-auto flex flex-col items-center bg-white  ">
       <motion.div
         className="hidden lg:block absolute top-60 left-0 z-10"
         animate={{ y: [0, -10, 0] }}
