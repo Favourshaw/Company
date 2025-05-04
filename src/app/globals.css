@@ -1,8 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Sora:wght@100..800&display=swap");
 @import "tailwindcss";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --muted: #818181;
+  --dark: #1b1b1b;
+  --accent: #0a850c;
 }
 
 @theme inline {
@@ -10,17 +14,107 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-muted: #818181;
+  --color-dark: #1b1b1b;
+  --color-accent: #0a850c;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.accent {
+  color: #0a850c;
+}
+
+.dark {
+  color: #1b1b1b;
+}
+
+.muted {
+  color: #818181;
+}
+
+.btn-home {
+  background: #141414;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  border-radius: 72px;
+}
+
+.text {
+  font-size: 24px;
+  color: #818181;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 400;
+}
+
+.text-sm {
+  font-size: 20px;
+  color: #818181;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 400;
+}
+.text-xs {
+  font-size: 14px;
+  color: #818181;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 400;
+}
+
+.sub-header {
+  font-size: 32px;
+  line-height: 42px;
+  color: black;
+  font-family: "Satoshi", sans-serif;
+}
+.header {
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: -2%;
+  color: black;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500;
+}
+@media (max-width: 1024px) {
+  .header {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .sub-header {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+  .text-sm {
+    font-size: 16px;
+  }
+}
+@media (max-width: 640px) {
+  .header {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .header {
+    font-size: 24px;
+    line-height: 42px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+  .text-sm {
+    font-size: 12px;
+  }
 }
