@@ -77,7 +77,7 @@ export default function About() {
               transition={{ duration: 0.3 }}
             >
               <h2 className="  header mb-3">{activeContent.title}</h2>
-              <p className="text mb-6 leading-relaxed">
+              <p className="text text-muted mb-6 leading-relaxed">
                 {activeContent.content}
               </p>
               <div className="flex items-center gap-4">
