@@ -1,10 +1,10 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { FiMenu, FiX } from "react-icons/fi";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Button from "../common/button";
+import { FiMenu, FiX } from "react-icons/fi";
 
 interface NavLink {
   id: string;
@@ -93,7 +93,7 @@ const Navbar = () => {
           <div className="block md:hidden z-50">
             <button
               onClick={() => setOpen((prev) => !prev)}
-              className="text-white text-3xl"
+              className="text-dark text-3xl"
               aria-label={open ? "Close menu" : "Open menu"}
             >
               {open ? <FiX /> : <FiMenu />}
@@ -104,7 +104,7 @@ const Navbar = () => {
 
       <div
         ref={sidebarRef}
-        className={`flex md:hidden fixed top-0 left-0 h-full w-64 bg-home-bg text-white p-6 flex-col gap-6 transition-transform duration-300 z-40 ${
+        className={`flex md:hidden fixed top-0 left-0 h-full w-64 bg-white text-dark p-6 flex-col gap-6 transition-transform duration-300 z-40 ${
           open ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -113,8 +113,8 @@ const Navbar = () => {
           <Link
             key={link.id}
             href={link.path}
-            className={`text-white py-2 px-3 rounded hover:bg-gray-700 ${
-              isActive(link.path) ? "bg-gray-700" : ""
+            className={`text-dark py-2 px-3 rounded hover:bg-accent hover:text-white ${
+              isActive(link.path) ? "bg-dark text-white" : ""
             }`}
             onClick={() => setOpen(false)}
           >
