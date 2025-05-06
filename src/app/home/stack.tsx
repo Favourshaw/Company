@@ -32,8 +32,8 @@ const techStack = [
 
 export default function Stack() {
   return (
-    <section className="py-20 bg-white px-4">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-20 bg-white px-4 ">
+      <div className="max-w-7xl mx-auto border-b border-[#F4F2F2]">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           Technology stack
         </h2>
