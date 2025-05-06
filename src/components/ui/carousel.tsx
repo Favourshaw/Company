@@ -51,7 +51,7 @@ export default function Carousel({ items, itemsToShow = 3 }: CarouselProps) {
   if (!isMounted) return null;
 
   return (
-    <div className="relative w-full overflow-hidden md:overflow-visible">
+    <div className="relative w-full overflow-hidden md:overflow-clip md:overflow-y-visible">
       <div className="absolute w-full justify-between items-end right-0 z-50 md:-top-40 flex-row  flex space-x-2 p-4">
         <div className="">
           <div className="lg:max-w-lg max-w-xs text-sm pb-5">
