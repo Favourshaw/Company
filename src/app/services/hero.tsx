@@ -20,9 +20,9 @@ export default function ServiceHero() {
 
         <p className="mt-4 text-base sm:text-lg muted ">
           At the core of our success is a refined development methodology that
-          balances technical excellence with business objectives. We've crafted
-          our approach to deliver predictable results while maintaining the
-          flexibility to adapt to your unique challenges.
+          balances technical excellence with business objectives. We&apos;ve
+          crafted our approach to deliver predictable results while maintaining
+          the flexibility to adapt to your unique challenges.
         </p>
       </motion.div>
 

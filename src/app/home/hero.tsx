@@ -73,7 +73,8 @@ export default function Hero() {
         <p className="mt-4 text-base sm:text-lg muted max-w-[847px]">
           Your vision, our expertise. From concept to deployment, we create
           sophisticated digital solutions that help businesses thrive in a
-          technology-driven world. Let's build something remarkable together.
+          technology-driven world. Let&apos;s build something remarkable
+          together.
         </p>
 
         <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
