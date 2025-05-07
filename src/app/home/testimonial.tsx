@@ -1,5 +1,4 @@
 import Carousel from "@/components/ui/carousel";
-import Image from "next/image";
 
 export default function Testimonial() {
   const items = [

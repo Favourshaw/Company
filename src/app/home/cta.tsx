@@ -13,7 +13,7 @@ export default function Cta() {
         results. Schedule a no-obligation consultation today.
       </div>
       <div>
-        <Button types="home">Let's Discuss Your Project</Button>
+        <Button types="home">Let&apos;s Discuss Your Project</Button>
       </div>
     </div>
   );

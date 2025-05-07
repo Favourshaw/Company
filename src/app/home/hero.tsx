@@ -89,7 +89,7 @@ export default function Hero() {
             </svg>
             <span>2 spots left for April</span>
           </div>
-          <Button types="home">Let’s Discuss Your Project</Button>
+          <Button types="home">Let&apos;s Discuss Your Project</Button>
         </div>
       </motion.div>
 

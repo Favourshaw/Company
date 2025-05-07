@@ -68,10 +68,10 @@ export default function PricingSection() {
         Our Pricing
       </motion.h2>
       <p className="text-sm max-w-3xl mx-auto mb-12">
-        We don't believe in one-size-fits-all pricing. Each business challenge
-        is unique, requiring a thoughtfully crafted solution. Our pricing
-        reflects the value we deliver—robust, scalable software that drives real
-        business outcomes.
+        We don&apos;t believe in one-size-fits-all pricing. Each business
+        challenge is unique, requiring a thoughtfully crafted solution. Our
+        pricing reflects the value we deliver—robust, scalable software that
+        drives real business outcomes.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-0">
         {pricingData.map((plan, index) => (

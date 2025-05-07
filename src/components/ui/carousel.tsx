@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
-import { ArrowBigRight } from "lucide-react";
+import Image from "next/image";
 
 interface CarouselProps {
   items: {
@@ -124,7 +124,7 @@ export default function Carousel({ items, itemsToShow = 3 }: CarouselProps) {
               }}
               transition={{ duration: 0.5 }}
             >
-              {items.map((item, index) => (
+              {items.map((item) => (
                 <motion.div
                   key={item.id}
                   className="flex-shrink-0 px-5 bg-green-50 p-6 rounded-lg shadow-sm"
@@ -132,20 +132,24 @@ export default function Carousel({ items, itemsToShow = 3 }: CarouselProps) {
                 >
                   <div className="flex h-full min-h-fit w-full flex-col justify-between items-start rounded-lg text-muted text-lg p-4 backdrop-blur-sm">
                     <div className="mb-32">
-                      <img
+                      <Image
                         src="/assets/png/quotes.png"
                         alt="quotes"
-                        className="w-10 h-10 mb-5"
+                        width="40"
+                        height="40"
+                        className=" mb-5"
                       />
                       <div className="">{item.text}</div>
                     </div>
 
                     <div>
                       <div className="flex items-center gap-3">
-                        <img
+                        <Image
                           src={item.avatar}
                           alt={item.name}
-                          className="w-8 h-8 rounded-full"
+                          width="32"
+                          height="32"
+                          className=" rounded-full"
                         />
                         <span className="font-medium">{item.name}</span>
                       </div>

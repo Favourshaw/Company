@@ -1,9 +1,7 @@
 "use client";
 
-import Button from "@/components/common/button";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { FaStar } from "react-icons/fa";
 
 export default function ServiceHero() {
   return (
@@ -28,7 +26,6 @@ export default function ServiceHero() {
         </p>
       </motion.div>
 
-      {/* === Developer Image === */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
