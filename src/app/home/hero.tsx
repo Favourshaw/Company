@@ -65,7 +65,7 @@ export default function Hero() {
           <hr className="z-0 relative text-[#E8E8E8]" />
         </div>
 
-        <h1 className="text-4xl sm:text-6xl font-medium text-gray-900">
+        <h1 className="text-4xl md:text-6xl font-medium text-gray-900">
           Transforming Ideas into Powerful
           <span className="accent"> {"{Software}"} </span> Solutions
         </h1>
