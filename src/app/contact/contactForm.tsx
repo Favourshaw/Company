@@ -35,7 +35,7 @@ export default function ContactForm() {
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="space-y-6 text-left bg-white p-12 pb-2 md:max-w-md  border border-[#F4F2F2] rounded-xl"
+          className="space-y-6 text-left bg-white p-6 md:p-12 pb-2 md:max-w-md  border border-[#F4F2F2] rounded-xl"
         >
           <h2 className="text-3xl text-dark font-semibold">
             Contact Information
@@ -91,13 +91,13 @@ export default function ContactForm() {
               Copy email address
             </button>
           </div>
-          <div className="mt-30">
+          <div className="md:mt-30 w-[138px] ml-auto md:ml-0">
             <Image
               width="134"
               height="159"
               src="/assets/svg/vintage-mac.svg"
               alt="Vintage Mac"
-              className=" mt-8 object-contain"
+              className=""
             />
           </div>
         </motion.div>
@@ -153,11 +153,11 @@ export default function ContactForm() {
 
           <div>
             <p className="font-semibold mb-4">Project type</p>
-            <div className="flex flex-wrap gap-4 pb-4">
+            <div className="flex flex-wrap gap-2 md:gap-4 pb-4">
               {options.map((option) => (
                 <label
                   key={option}
-                  className="flex items-center space-x-3 cursor-pointer text-sm "
+                  className="flex items-center space-x-1 md:space-x-3 cursor-pointer text-sm "
                 >
                   <input
                     type="radio"
@@ -167,14 +167,14 @@ export default function ContactForm() {
                     onChange={() => setSelected(option)}
                     className="hidden"
                   />
-                  <span className="relative w-6 h-6 rounded-full border border-transparent bg-[#E0E0E0] flex items-center justify-center">
+                  <span className="relative w-5 h-5 md:w-6 md:h-6 rounded-full border border-transparent bg-[#E0E0E0] flex items-center justify-center">
                     {selected === option && (
                       <motion.span
                         layoutId="radio-dot"
-                        className="w-6 h-6 rounded-full bg-[#011C2A] flex items-center justify-center text-white"
+                        className="w-4 h-4 md:w-5 md:h-5 rounded-full bg-[#011C2A] flex items-center justify-center text-white"
                       >
                         <svg
-                          className="w-5 h-5 text-green"
+                          className="w-4 h-4 md:w-5 md:h-5 text-green"
                           fill="none"
                           stroke="currentColor"
                           strokeWidth={3}
