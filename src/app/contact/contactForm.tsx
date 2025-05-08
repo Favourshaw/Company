@@ -12,7 +12,7 @@ export default function ContactForm() {
   const options: Option[] = ["Mobile app", "Web app", "Website", "Custom"];
 
   return (
-    <section className="mt-30 max-w-7xl mx-auto p-6 flex flex-col items-center justify-center">
+    <section className=" mt-30 max-w-7xl mx-auto p-6 flex flex-col items-center justify-center">
       <motion.div
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -30,12 +30,12 @@ export default function ContactForm() {
           looking to enhance an existing application, our team is here to help.
         </p>
       </motion.div>
-      <div className=" mt-10 p-8 md:p-0 flex flex-col md:flex-row items-start gap-12 bg-[#f9fff6] rounded-3xl">
+      <div className=" mt-10 p-0 md:p-6 flex flex-col md:flex-row items-start gap-12 md:bg-[#f9fff6] rounded-3xl">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="space-y-6 text-left bg-white p-12 pb-2 md:max-w-md"
+          className="space-y-6 text-left bg-white p-12 pb-2 md:max-w-md  border border-[#F4F2F2] rounded-xl"
         >
           <h2 className="text-3xl text-dark font-semibold">
             Contact Information
