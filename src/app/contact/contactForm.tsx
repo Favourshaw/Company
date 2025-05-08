@@ -108,7 +108,7 @@ export default function ContactForm() {
           transition={{ duration: 0.5 }}
           className="space-y-6 w-full col-span-2 pt-12"
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
             <label className="text-[10px] pb-3">
               First Name
               <input
@@ -129,7 +129,7 @@ export default function ContactForm() {
             </label>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <label className="text-[10px] pb-6">
               Email
               <input
