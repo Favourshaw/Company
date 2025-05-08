@@ -30,12 +30,12 @@ export default function ContactForm() {
           looking to enhance an existing application, our team is here to help.
         </p>
       </motion.div>
-      <div className=" mt-10 flex flex-row items-start gap-12 bg-[#f9fff6] rounded-3xl">
+      <div className=" mt-10 p-8 md:p-0 flex flex-col md:flex-row items-start gap-12 bg-[#f9fff6] rounded-3xl">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="space-y-6 text-left bg-white p-12 pb-2 max-w-md"
+          className="space-y-6 text-left bg-white p-12 pb-2 md:max-w-md"
         >
           <h2 className="text-3xl text-dark font-semibold">
             Contact Information
